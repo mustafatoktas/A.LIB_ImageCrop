@@ -7,7 +7,6 @@ Jetpack Compose için görsel kırpma kütüphanesi. Serbest, kare ve şeffaf k�
 Android 13 (API 33) ve üzeri, Jetpack Compose ve Material 3 gerekir.
 
 ```kotlin
-// app/build.gradle.kts
 dependencies {
     implementation("com.toktasoft:image-crop:1.0.0")
 }
