@@ -6,15 +6,40 @@ Jetpack Compose için görsel kırpma kütüphanesi. Serbest, kare ve şeffaf k�
 
 Android 13 (API 33) ve üzeri, Jetpack Compose ve Material 3 gerekir.
 
+**Doğrudan ekleme**
+
 ```kotlin
+// app/build.gradle.kts
 dependencies {
-    implementation("com.toktasoft:image-crop:1.0.0")
+    implementation("com.toktasoft:image-crop:1.0.1")
+}
+```
+
+**Sürüm kataloğu (TOML) ile**
+
+```toml
+# gradle/libs.versions.toml
+[versions]
+imageCrop = "1.0.1"
+
+[libraries]
+image-crop = { group = "com.toktasoft", name = "image-crop", version.ref = "imageCrop" }
+```
+
+```kotlin
+// app/build.gradle.kts
+dependencies {
+    implementation(libs.image.crop)
 }
 ```
 
 Compose, Material 3 ve Core KTX bağımlılıkları otomatik gelir. Kütüphane ek bir ikon paketi getirmez.
 
 Proje JDK 25, Gradle 9.8, AGP 9.5 ve Kotlin 2.4.21 ile derlenir. Gradle JDK'sı `gradle/gradle-daemon-jvm.properties` ile 25'e sabitlenmiştir.
+
+## Örnek uygulama
+
+Kütüphaneyi kod yazmadan denemek için örnek uygulamanın APK'sını [Releases](https://github.com/mustafatoktas/A.LIB_ImageCrop/releases/latest) sayfasından indirip kurabilirsiniz. Uygulamadaki ayarlar kartından kırpma şekillerini, kılavuz çizgilerini ve çıktı boyutunu değiştirerek ekranın bütün seçeneklerini canlı görebilirsiniz.
 
 ## Hazır ekran
 
@@ -31,22 +56,26 @@ ImageCropScreen(
 )
 ```
 
-- **Ekranın içeriği:** Kırpma alanı, 90° döndürme butonları, seçimi sıfırlama, kırpma şekli ve kılavuz çizgileri kartları, "Görselin tamamını kullan" butonu ve yüzen Kırp butonu.
-- **`onResult`:** Yeni `Bitmap` ile ana iş parçacığında çağrılır. Ekran kendini kapatmaz; ne olacağına uygulama karar verir.
-- **`onDismiss`:** Üst çubuktaki geri butonu için çağrılır. Sistem geri hareketini kütüphane yakalamaz; gerekiyorsa uygulamada `BackHandler` kullanın.
-- **`onError`:** Dışa aktarma başarısız olursa çağrılır. Ekran ayrıca bir snackbar gösterir.
+Ekranda kırpma alanı, 90° döndürme butonları, seçimi sıfırlama, kırpma şekli ve kılavuz çizgileri kartları, "Görselin tamamını kullan" butonu ve yüzen Kırp butonu bulunur.
 
-### Ekranı uygulamanıza göre ayarlama
+### Parametreler
 
-| Parametre | Varsayılan | Açıklama |
-|---|---|---|
-| `cropShape` | `SQUARE` | Başlangıç şekli. Şekil kartı gizliyse bu şekil sabittir. |
-| `cropShapes` | Hepsi | Kartta sunulacak şekiller ve sırası. `cropShape` bu listede olmalıdır. |
-| `showCropShapeCard` | `true` | Kırpma şekli kartı. Listede tek şekil varsa kendiliğinden gizlenir. |
-| `showGuideLines` | `true` | Kılavuz çizgilerinin başlangıç durumu. Kart gizliyse sabittir. |
-| `showGuideLinesCard` | `true` | Kılavuz çizgileri aç/kapa kartı. |
-| `showUseFullImage` | `true` | "Görselin tamamını kullan" butonu. Sonucun seçilen şekle uyması gerekiyorsa gizleyin. |
-| `options` | `CropOptions()` | Çıktı boyutu sınırları. |
+| Parametre | Tür | Varsayılan | Açıklama |
+|---|---|---|---|
+| `bitmap` | `Bitmap` | Zorunlu | Kırpılacak görsel. Uygulamanıza aittir; kütüphane değiştirmez veya recycle etmez. |
+| `onResult` | `(Bitmap) -> Unit` | Zorunlu | Kırpılan yeni bitmap ile ana iş parçacığında çağrılır. Ekran kendini kapatmaz; ne olacağına uygulama karar verir. |
+| `onDismiss` | `() -> Unit` | Zorunlu | Üst çubuktaki geri butonuna basılınca çağrılır. Sistem geri hareketini kütüphane yakalamaz; gerekiyorsa uygulamada `BackHandler` kullanın. |
+| `modifier` | `Modifier` | `Modifier` | Ekranın kapsayıcısına uygulanır. |
+| `cropShape` | `CropShape` | `SQUARE` | Başlangıç şekli: `FREE`, `SQUARE` veya `CIRCLE`. Şekil kartı gizliyse bu şekil sabittir. |
+| `cropShapes` | `List<CropShape>` | Hepsi | Kartta sunulacak şekiller ve sırası. `cropShape` bu listede olmalıdır. |
+| `showCropShapeCard` | `Boolean` | `true` | Kırpma şekli kartını gösterir. Listede tek şekil varsa kendiliğinden gizlenir. |
+| `showGuideLines` | `Boolean` | `true` | Kılavuz çizgilerinin başlangıç durumu. Kart gizliyse bu değer sabittir. |
+| `showGuideLinesCard` | `Boolean` | `true` | Kılavuz çizgileri aç/kapa kartını gösterir. |
+| `showUseFullImage` | `Boolean` | `true` | "Görselin tamamını kullan" butonunu gösterir. Bu buton görselin tamamını döndürülmüş haliyle, kırpmadan ve maskesiz verir; sonucun seçilen şekle uyması gerekiyorsa gizleyin. |
+| `options` | `CropOptions` | `CropOptions()` | Çıktı boyutu sınırları: `maxWidth` ve `maxHeight` (varsayılan 4096) ile `maxPixels` (varsayılan 16.777.216). Küçük görseller büyütülmez. |
+| `onError` | `(Throwable) -> Unit` | `{}` | Dışa aktarma başarısız olursa çağrılır. Ekran ayrıca bir snackbar gösterir. |
+
+### Örnekler
 
 ```kotlin
 // Profil fotoğrafı her zaman 1:1: şekil seçilemez, tam görsel seçeneği yok.

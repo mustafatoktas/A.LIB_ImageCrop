@@ -8,8 +8,8 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import com.toktasoft.imagecrop.sample.R
 
 data class InfoCard(
-    @param:StringRes val title: Int,
-    @param:StringRes val summary: Int,
+    @StringRes val title: Int,
+    @StringRes val summary: Int,
     val icon: ImageVector,
     val link: String,
 )

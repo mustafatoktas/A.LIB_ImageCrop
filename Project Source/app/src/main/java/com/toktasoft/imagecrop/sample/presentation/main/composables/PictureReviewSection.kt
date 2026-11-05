@@ -22,8 +22,8 @@ import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.IntSize
-import coil.compose.AsyncImage
-import coil.request.ImageRequest
+import coil3.compose.AsyncImage
+import coil3.request.ImageRequest
 import com.toktasoft.imagecrop.sample.R
 import com.toktasoft.imagecrop.sample.common.extensions.noRippleClickable
 import java.io.File

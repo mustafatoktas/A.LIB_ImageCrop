@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.toktasoft"
-version = "1.0.0"               // her release'te artır
+version = "1.0.1"               // her release'te artır
 
 android {
     namespace = "com.toktasoft.imagecrop"
@@ -68,6 +68,15 @@ mavenPublishing {
                 name.set("Mustafa TOKTAŞ")
                 url.set("https://toktasoft.com")
             }
+            developer {
+                id.set("toktasoft")
+                name.set("Toktasoft")
+                url.set("https://github.com/Toktasoft")
+            }
+        }
+        organization {
+            name.set("Toktasoft")
+            url.set("https://toktasoft.com")
         }
         scm {
             url.set("https://github.com/mustafatoktas/A.LIB_ImageCrop")

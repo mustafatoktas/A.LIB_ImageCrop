@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/white</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo_light</item>
-        <item name="android:windowSplashScreenBrandingImage" tools:ignore="NewApi">@drawable/from_toktasoft</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo</item>
+        <item name="android:windowSplashScreenBrandingImage">@drawable/from_toktasoft</item>
         <item name="postSplashScreenTheme">@style/Theme.ImageCrop</item>
     </style>
 </resources>

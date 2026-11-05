@@ -14,9 +14,9 @@ import dagger.hilt.android.AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
         super.onCreate(savedInstanceState)
 
-        installSplashScreen()
         AppLocale.initialize(this)
         enableEdgeToEdge()
         setContent {

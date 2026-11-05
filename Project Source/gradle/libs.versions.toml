@@ -17,7 +17,7 @@ coreSplashScreen = "1.2.0"
 room = "2.8.5"
 # 3. parti ---------- 3. parti ---------- 3. parti ---------- 3. parti ---------- 3. parti ---------- 3. parti ----------
 # coil
-coil = "2.7.0"
+coil = "3.6.3"
 # vanniktech maven publish
 vanniktechMavenCentral = "0.37.0"
 
@@ -44,7 +44,7 @@ androidx-material-icons-extended = { group = "androidx.compose.material", name =
 androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "coreSplashScreen" }
 # 3. parti ---------- 3. parti ---------- 3. parti ---------- 3. parti ---------- 3. parti ---------- 3. parti ----------
 # coil
-coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil" }
 
 
 [plugins]
@@ -57,5 +57,6 @@ ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 hilt-plugin = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 # room
 room = { id = "androidx.room", version.ref = "room" }
+# 3. parti ---------- 3. parti ---------- 3. parti ---------- 3. parti ---------- 3. parti ---------- 3. parti ----------
 # vanniktech maven publish
 vanniktech-maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "vanniktechMavenCentral" }

@@ -23,7 +23,7 @@ import kotlin.time.Duration.Companion.milliseconds
 
 @HiltViewModel
 class MainVM @Inject constructor(
-    private val croppedImageUC: CroppedImageUseCases,
+    private val croppedImageUCs: CroppedImageUseCases,
 ) : ViewModel() {
     private val _uiState = MutableStateFlow(UiState())
     val uiState: StateFlow<UiState> = _uiState.asStateFlow()
@@ -56,7 +56,7 @@ class MainVM @Inject constructor(
 
     private fun getAllImages() {
         viewModelScope.launch {
-            croppedImageUC.getAllCroppedImages()
+            croppedImageUCs.getAllCroppedImages()
                 .flowOn(Dispatchers.IO)
                 .collect { images ->
                 updateUiState { copy(images = images) }
@@ -77,9 +77,7 @@ class MainVM @Inject constructor(
 
     private fun deleteAllImages() {
         viewModelScope.launch {
-            croppedImageUC.deleteAllCroppedImages()
-                .onSuccess { println("All Images Deleted Successfully") }
-                .onFailure { println("All Images Deletion Failed ${it.message}") }
+            croppedImageUCs.deleteAllCroppedImages()
         }
     }
 
@@ -87,13 +85,9 @@ class MainVM @Inject constructor(
         bitmap: Bitmap,
     ) {
         viewModelScope.launch {
-            croppedImageUC.addCroppedImage(bitmap)
+            croppedImageUCs.addCroppedImage(bitmap)
                 .onSuccess {
                     updateUiState { copy(selectedBitmap = createBitmap(1, 1)) }
-                    println("Image Saved Successfully")
-                }
-                .onFailure {
-                    println("Image Saving Failed ${it.message}")
                 }
         }
     }
@@ -102,9 +96,7 @@ class MainVM @Inject constructor(
         image: CroppedImage,
     ) {
         viewModelScope.launch {
-            croppedImageUC.deleteCroppedImage(image)
-                .onSuccess { println("Image Deleted Successfully") }
-                .onFailure { println("Image Deletion Failed ${it.message}") }
+            croppedImageUCs.deleteCroppedImage(image)
         }
     }
 }

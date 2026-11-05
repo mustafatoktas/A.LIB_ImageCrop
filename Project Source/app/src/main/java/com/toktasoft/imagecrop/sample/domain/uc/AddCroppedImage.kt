@@ -32,7 +32,7 @@ class AddCroppedImage @Inject constructor(
                     image = CroppedImage(
                         uri = file.absolutePath,
                         createdAt = System.currentTimeMillis(),
-                    )
+                    ),
                 )
             }
             output = null

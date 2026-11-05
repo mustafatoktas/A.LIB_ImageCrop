@@ -5,7 +5,7 @@ import com.toktasoft.imagecrop.sample.R
 
 enum class AppLanguage(
     val tag: String,
-    @param:StringRes val nameRes: Int,
+    @StringRes val nameRes: Int,
 ) {
     ENGLISH("en", R.string.language_english),
     TURKISH("tr", R.string.language_turkish);
