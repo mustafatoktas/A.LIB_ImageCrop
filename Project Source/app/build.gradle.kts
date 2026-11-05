@@ -64,9 +64,7 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
-    implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    debugImplementation(libs.androidx.ui.tooling)
 
     // hilt
     implementation(libs.hilt)
@@ -74,8 +72,7 @@ dependencies {
     ksp(libs.hilt.compiler)
 
     //room
-    implementation(libs.androidx.room.ktx)
-    implementation(libs.androidx.room.common)
+    implementation(libs.androidx.room.runtime)
     ksp(libs.androidx.room.compiler)
 
     // icons
