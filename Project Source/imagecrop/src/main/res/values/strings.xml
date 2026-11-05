@@ -1,0 +1,25 @@
+<resources>
+    <!-- Screen -->
+    <string name="image_crop_title">Crop image</string>
+    <string name="image_crop_back">Back</string>
+    <string name="image_crop_reset">Reset selection</string>
+    <string name="image_crop_rotate_left">Rotate left</string>
+    <string name="image_crop_rotate_right">Rotate right</string>
+    <string name="image_crop_shape">Crop shape</string>
+    <string name="image_crop_shape_free">Free</string>
+    <string name="image_crop_shape_square">Square</string>
+    <string name="image_crop_shape_circle">Circle</string>
+    <string name="image_crop_guide_lines">Guide lines</string>
+    <string name="image_crop_use_full_image">Use full image</string>
+    <string name="image_crop_crop">Crop</string>
+    <string name="image_crop_error">Could not crop this image. Please try again.</string>
+
+    <!-- Accessibility -->
+    <string name="image_crop_selection">Crop selection. Drag inside to move; drag an edge or corner to resize.</string>
+    <string name="image_crop_move_left">Move selection left</string>
+    <string name="image_crop_move_right">Move selection right</string>
+    <string name="image_crop_move_up">Move selection up</string>
+    <string name="image_crop_move_down">Move selection down</string>
+    <string name="image_crop_grow">Enlarge selection</string>
+    <string name="image_crop_shrink">Shrink selection</string>
+</resources>

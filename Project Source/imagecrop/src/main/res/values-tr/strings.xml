@@ -1,0 +1,25 @@
+<resources>
+    <!-- Ekran -->
+    <string name="image_crop_title">Görseli kırp</string>
+    <string name="image_crop_back">Geri</string>
+    <string name="image_crop_reset">Seçimi sıfırla</string>
+    <string name="image_crop_rotate_left">Sola döndür</string>
+    <string name="image_crop_rotate_right">Sağa döndür</string>
+    <string name="image_crop_shape">Kırpma şekli</string>
+    <string name="image_crop_shape_free">Serbest</string>
+    <string name="image_crop_shape_square">Kare</string>
+    <string name="image_crop_shape_circle">Daire</string>
+    <string name="image_crop_guide_lines">Kılavuz çizgileri</string>
+    <string name="image_crop_use_full_image">Görselin tamamını kullan</string>
+    <string name="image_crop_crop">Kırp</string>
+    <string name="image_crop_error">Görsel kırpılamadı. Lütfen yeniden deneyin.</string>
+
+    <!-- Erişilebilirlik -->
+    <string name="image_crop_selection">Kırpma alanı. Taşımak için içini, boyutlandırmak için kenar veya köşesini sürükleyin.</string>
+    <string name="image_crop_move_left">Seçimi sola taşı</string>
+    <string name="image_crop_move_right">Seçimi sağa taşı</string>
+    <string name="image_crop_move_up">Seçimi yukarı taşı</string>
+    <string name="image_crop_move_down">Seçimi aşağı taşı</string>
+    <string name="image_crop_grow">Seçimi büyüt</string>
+    <string name="image_crop_shrink">Seçimi küçült</string>
+</resources>

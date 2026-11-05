@@ -1,0 +1,19 @@
+<resources>
+    <!-- Üst çubuk -->
+    <plurals name="image_count">
+        <item quantity="one">%d görsel</item>
+        <item quantity="other">%d görsel</item>
+    </plurals>
+    <string name="delete_all">Tümünü sil</string>
+    <string name="select_image">Görsel seç</string>
+    <string name="language">Dil</string>
+
+    <!-- Silme dialogu -->
+    <string name="delete_all_message">Bütün görseller kalıcı olarak silinecek.</string>
+    <string name="cancel">İptal</string>
+
+    <!-- Bilgi kartları -->
+    <string name="info_developer_summary">Geliştiricinin GitHub profilini aç</string>
+    <string name="info_repository_title">Kütüphane deposu</string>
+    <string name="info_repository_summary">Image Crop kaynak kodunu görüntüle</string>
+</resources>
