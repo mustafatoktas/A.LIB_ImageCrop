@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Splash screen icon: Image Crop logo redrawn as a vector from the original 512 px artwork.
+     288x288 dp with no icon background, so the visible part stays inside the 192 dp mask circle.
+     VectorPath and VectorRaster are ignored: 288 dp is the size the splash screen guidelines require,
+     and this fixed artwork is drawn only once on the splash screen. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="288dp"
+    android:height="288dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512"
+    tools:ignore="VectorPath,VectorRaster">
+    <!-- Squircle -->
+    <path
+        android:fillColor="#FFF2EEFE"
+        android:pathData="M381,256C381,274.65 378.99,293.32 374.85,311.5C373.77,316.27 372.71,321.03 370.68,325.5C366.1,335.6 359.96,344.27 352.11,352.11C344.27,359.96 335.6,366.1 325.5,370.68C321.03,372.71 316.27,373.77 311.5,374.85C293.32,378.99 274.65,381 256,381C237.35,381 218.68,378.99 200.5,374.85C195.73,373.77 190.97,372.71 186.5,370.68C176.4,366.1 167.73,359.96 159.89,352.11C152.04,344.27 145.9,335.6 141.32,325.5C139.29,321.03 138.23,316.27 137.15,311.5C133.01,293.32 131,274.65 131,256C131,237.35 133.01,218.68 137.15,200.5C138.23,195.73 139.29,190.97 141.32,186.5C145.9,176.4 152.04,167.73 159.89,159.89C167.73,152.04 176.4,145.9 186.5,141.32C190.97,139.29 195.73,138.23 200.5,137.15C218.68,133.01 237.35,131 256,131C274.65,131 293.32,133.01 311.5,137.15C316.27,138.23 321.03,139.29 325.5,141.32C335.6,145.9 344.27,152.04 352.11,159.89C359.96,167.73 366.1,176.4 370.68,186.5C372.71,190.97 373.77,195.73 374.85,200.5C378.99,218.68 381,237.35 381,256Z" />
+    <!-- Crop mark -->
+    <path
+        android:strokeWidth="15.62"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M209.03,180.72C208.8,183.75 207.55,192.66 207.79,197.19C207.89,199.21 207.55,197.2 207.43,199.73C207.07,207.09 206.73,215.55 206.68,223.62C206.6,236.25 206.65,250.5 207.39,261.6C208.03,271.01 207.79,286.94 213.51,293.35C216.96,297.2 220.53,300.81 225.65,302.11C237.7,305.17 281.5,305.85 291.86,305.07C293.68,304.93 291.06,305.02 295.25,305.09C306.73,305.28 322.43,303.79 331.24,303.13">
+            <aapt:attr name="android:strokeColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="173.5"
+                    android:startY="173.5"
+                    android:endX="274.55"
+                    android:endY="274.55"
+                    android:startColor="#FFBAA2FF"
+                    android:endColor="#FF6F2EFE" />
+            </aapt:attr>
+    </path>
+    <path
+        android:strokeWidth="15.62"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M180.73,208.9C190.28,208.24 194.61,207.42 201.39,207.71C204.23,207.83 204.62,208.07 206.68,208">
+            <aapt:attr name="android:strokeColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="173.5"
+                    android:startY="173.5"
+                    android:endX="274.55"
+                    android:endY="274.55"
+                    android:startColor="#FFBAA2FF"
+                    android:endColor="#FF6F2EFE" />
+            </aapt:attr>
+    </path>
+    <path
+        android:strokeWidth="15.62"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M305.05,304.92C304.54,313.74 303.83,322.86 303.04,331.28">
+            <aapt:attr name="android:strokeColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="173.5"
+                    android:startY="173.5"
+                    android:endX="274.55"
+                    android:endY="274.55"
+                    android:startColor="#FFBAA2FF"
+                    android:endColor="#FF6F2EFE" />
+            </aapt:attr>
+    </path>
+    <path
+        android:strokeWidth="15.62"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M233.91,206.52C243.8,207.04 276.81,206.85 286.63,210.09C293.45,212.34 298.53,217.11 301.52,224.13C304.9,232.04 305.22,268.39 305.41,278">
+            <aapt:attr name="android:strokeColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="173.5"
+                    android:startY="173.5"
+                    android:endX="274.55"
+                    android:endY="274.55"
+                    android:startColor="#FFBAA2FF"
+                    android:endColor="#FF6F2EFE" />
+            </aapt:attr>
+    </path>
+</vector>

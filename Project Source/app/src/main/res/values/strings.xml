@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name" translatable="false">Image Crop</string>
+
+    <!-- Top bar -->
+    <plurals name="image_count">
+        <item quantity="one">%d image</item>
+        <item quantity="other">%d images</item>
+    </plurals>
+    <string name="delete_all">Delete all</string>
+    <string name="select_image">Select image</string>
+    <string name="language">Language</string>
+    <string name="language_english" translatable="false">English</string>
+    <string name="language_turkish" translatable="false">Türkçe</string>
+
+    <!-- Delete dialog -->
+    <string name="delete_all_message">All images will be permanently deleted.</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Info cards -->
+    <string name="info_developer_name" translatable="false">Mustafa TOKTAŞ</string>
+    <string name="info_developer_summary">Open the developer\'s GitHub profile</string>
+    <string name="info_repository_title">Library repository</string>
+    <string name="info_repository_summary">View the Image Crop source code</string>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="image_load_error">Could not open this image. Please select another image.</string>
+    <string name="image_saved">Saved: %1$d × %2$d px</string>
+
+    <!-- Crop screen settings -->
+    <string name="settings_title">Crop screen settings</string>
+    <string name="settings_reset">Reset</string>
+    <string name="settings_offered_shapes">Offered shapes</string>
+    <string name="settings_initial_shape">Initial shape</string>
+    <string name="settings_show_shape_card">Show shape card</string>
+    <string name="settings_show_guide_lines">Guide lines on</string>
+    <string name="settings_show_guide_lines_card">Show guide lines card</string>
+    <string name="settings_show_use_full_image">Show \"Use full image\"</string>
+    <string name="settings_max_output_size">Max output size</string>
+    <string name="shape_free">Free</string>
+    <string name="shape_square">Square</string>
+    <string name="shape_circle">Circle</string>
+</resources>

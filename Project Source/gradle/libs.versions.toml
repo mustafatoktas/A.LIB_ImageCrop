@@ -1,0 +1,62 @@
+[versions]
+agp = "9.5.0"
+kotlin = "2.4.21"
+composeBom = "2026.09.00"
+activityCompose = "1.13.0"
+coreKtx = "1.19.1"
+# appcompat
+appcompat = "1.8.0"
+# ksp
+ksp = "2.3.13"
+# hilt
+hilt = "2.60.1"
+hiltLifecycleViewModel = "1.4.0"
+# splash screen
+coreSplashScreen = "1.2.0"
+# room
+room = "2.8.5"
+# 3. parti ---------- 3. parti ---------- 3. parti ---------- 3. parti ---------- 3. parti ---------- 3. parti ----------
+# coil
+coil = "3.6.3"
+# vanniktech maven publish
+vanniktechMavenCentral = "0.37.0"
+
+
+[libraries]
+androidx-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+# appcompat
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+# hilt
+hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt"}
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt"}
+hilt-lifecycle-viewmodel-compose = { group = "androidx.hilt", name = "hilt-lifecycle-viewmodel-compose", version.ref = "hiltLifecycleViewModel" }
+# room
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+# icons
+androidx-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended"}
+# splash screen
+androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "coreSplashScreen" }
+# 3. parti ---------- 3. parti ---------- 3. parti ---------- 3. parti ---------- 3. parti ---------- 3. parti ----------
+# coil
+coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+# ksp
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+# hilt
+hilt-plugin = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+# room
+room = { id = "androidx.room", version.ref = "room" }
+# 3. parti ---------- 3. parti ---------- 3. parti ---------- 3. parti ---------- 3. parti ---------- 3. parti ----------
+# vanniktech maven publish
+vanniktech-maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "vanniktechMavenCentral" }
