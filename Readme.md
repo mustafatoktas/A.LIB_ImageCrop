@@ -175,5 +175,3 @@ val bitmap = ImageCropLoader.load(context, uri)
 ## Lisans
 
 GNU GPL v3. Ayrıntılar için `License` dosyasına bakın.
-
-delete here
