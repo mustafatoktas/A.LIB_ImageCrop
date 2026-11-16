@@ -1,0 +1,18 @@
+<resources>
+    <string name="image_load_error">Görsel açılamadı. Lütfen başka bir görsel seçin.</string>
+    <string name="image_saved">Kaydedildi: %1$d × %2$d px</string>
+
+    <!-- Kırpma ekranı ayarları -->
+    <string name="settings_title">Kırpma ekranı ayarları</string>
+    <string name="settings_reset">Sıfırla</string>
+    <string name="settings_offered_shapes">Sunulan şekiller</string>
+    <string name="settings_initial_shape">Başlangıç şekli</string>
+    <string name="settings_show_shape_card">Şekil kartını göster</string>
+    <string name="settings_show_guide_lines">Kılavuz çizgileri açık</string>
+    <string name="settings_show_guide_lines_card">Kılavuz çizgileri kartını göster</string>
+    <string name="settings_show_use_full_image">\"Görselin tamamını kullan\" butonunu göster</string>
+    <string name="settings_max_output_size">En büyük çıktı boyutu</string>
+    <string name="shape_free">Serbest</string>
+    <string name="shape_square">Kare</string>
+    <string name="shape_circle">Daire</string>
+</resources>
